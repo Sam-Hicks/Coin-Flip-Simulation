@@ -8,6 +8,7 @@ def coin_flip(trials, num_flips):
     averages of the total heads and total tails are recorded. The results are then printed
     for each trial."""
 
+    #Initalize variables for final results
     total_heads = 0
     total_tails = 0
 
@@ -22,7 +23,7 @@ def coin_flip(trials, num_flips):
 
             if flip == 0: #If heads
                 heads_val+=1 #Increament the heads counter by 1
-                flips_sequence.append('H') #Apeend a 'H' to the list
+                flips_sequence.append('H') #Append a 'H' to the list
             else: #If tails
                 tails_val+=1 #Increament the tails counter by 1
                 flips_sequence.append('T') #Append a 'T' to the list
@@ -57,15 +58,17 @@ def coin_flip(trials, num_flips):
 
 
 def main():
+    """Main driver of the program"""
+    
     #User Input data
-    # print("==============================")
-    # trials = int(input("How many trials are to be ran?: ")) #Number of tails to be ran
-    # num_flips = int(input("How many flips per trial?: ")) #Number of flips to be done
-    # print("==============================")
+    print("==============================")
+    trials = int(input("How many trials are to be ran?: ")) #Number of tails to be ran
+    num_flips = int(input("How many flips per trial?: ")) #Number of flips to be done
+    print("==============================")
 
-    #Can be used as just variables too
-    trials = 10 #Number of tails to be ran
-    num_flips = 20 #Number of flips to be done
+    #Uncomment the next two lines to use just variables
+    # trials = 10 #Number of tails to be ran
+    # num_flips = 20 #Number of flips to be done
 
     coin_flip(trials, num_flips) #Run the trials
 
