@@ -3,7 +3,7 @@
 import random
 
 def coin_flip(trials, num_flips):
-    """This function will simulate n games of fliping a coin. It uses a random number generator
+    """This function will simulate n games of flipping a coin. It uses a random number generator
     to simulate a coin flip. Heads is denoted by a '0' and tails is denoted by a '1'. The 
     averages of the total heads and total tails are recorded. The results are then printed
     for each trial."""
@@ -59,7 +59,7 @@ def coin_flip(trials, num_flips):
 
 def main():
     """Main driver of the program"""
-    
+
     #User Input data
     print("==============================")
     trials = int(input("How many trials are to be ran?: ")) #Number of tails to be ran
